@@ -3,23 +3,14 @@
     <!-- Check WP Standards -->
     <rule ref="WordPress">
         <exclude name="WordPress.PHP.DisallowShortTernary"/>
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+        <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+        <exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
     </rule>
 
     <!-- Check PHP version compatibility -->
     <config name="testVersion" value="7.4-"/>
     <rule ref="PHPCompatibilityWP"/>
-
-    <rule ref="Generic">
-        <exclude name="Generic"/>
-    </rule>
-
-    <rule ref="PEAR">
-        <exclude name="PEAR"/>
-    </rule>
-
-    <rule ref="Squiz">
-        <exclude name="Squiz"/>
-    </rule>
 
     <!-- Excluded these dirs -->
     <exclude-pattern>build/</exclude-pattern>
