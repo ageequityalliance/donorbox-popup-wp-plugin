@@ -74,9 +74,9 @@ function admin_page(): void {
 ?>
 <h1>Donorbox Popup plugin for WordPress</h1>
 <p>This plugin allows website owners to include a full screen donorbox form on page load.</p>
-<form method="post">
+<form method="post" style="padding-right:10px;">
     <p>
-    <label for="<?php echo sanitize_key($url_key); ?>">Donorbox campaign url:</label>
+    <label for="<?php echo sanitize_key($url_key); ?>" style="font-weight:600;">Donorbox campaign url:</label>
     <input 
         type="url"
         id="<?php echo sanitize_key($url_key); ?>"
@@ -84,9 +84,9 @@ function admin_page(): void {
         value="<?php echo esc_url(get_option($url_key, '')); ?>"
         placeholder="https://donorbox.org/my-campaign" 
         style="width:100%;"></p>
-    <p>A visitor to your site will see the form on first page load. When they close the form, it will not reappear for the selected number of days:</p>
+    <p>A visitor to your site will see the form on first page load. When they close the form, it will not reappear for the selected number of days.</p>
     <p>
-    <label for="<?php echo sanitize_key($days_key); ?>">Days until next popup:</label>
+    <label for="<?php echo sanitize_key($days_key); ?>" style="font-weight:600;">Days until next popup:</label>
     <input
         type="number"
         id="<?php echo sanitize_key($days_key); ?>"
