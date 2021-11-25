@@ -11,11 +11,11 @@
         console.error('donorbox popup missing daysUntilNextShowing')
     }
 
-    let setCookie = (cName, cValue, expDays) => {
+    let setCookie = (cName, expDays) => {
         let date = new Date();
         date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
         const expires = "expires=" + date.toUTCString();
-        document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+        document.cookie = cName + "=seen; secure; " + expires + "; path=/";
     }
 
     let getCookie = (cName) => {
@@ -55,7 +55,7 @@
         d.body.appendChild(frame);
         frame.focus();
 
-        setCookie(frameID, 'seen', daysUntilNextShowing);
+        setCookie(frameID, daysUntilNextShowing);
     }
 
     // Listen for modal close event
