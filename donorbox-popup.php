@@ -3,7 +3,7 @@
  * Plugin Name: Donorbox popup plugin for WordPress
  * Plugin URI: https://github.com/ageequityalliance/donorbox-popup-wp-plugin
  * Description: Adds a Donorbox popup on pageload
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Nate Gay
  * Author URI: https://github.com/ageequityalliance
  * License: GPL3
@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
  * @return void
  */
 function enqueue_scripts(): void {
-    $plugin_version = '1.0.1';
+    $plugin_version = '1.0.2';
 	$script_key = 'donorbox-popup-js';
 	wp_enqueue_script(
 		$script_key,
