@@ -1,0 +1,20 @@
+{
+    "name": "ageequityalliance/donorbox-popup-wp-plugin",
+    "description": "Donorbox popup plugin for WordPress",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Nate Gay",
+            "email": "nate.gay@ageequityalliance.org"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7"
+    }
+}
